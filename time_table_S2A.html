@@ -4,58 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        .border__table {
-            border: 1px solid white;
+
+        table {
+            background-color: gray;
+        }
+
+        .header__table {
+            background-color: #f2f2f2;
+            text-decoration: steelblue;
+            font-size: 24px;
+            padding: 0.5em;
+        }
+           
+        /*TIME*/
+        thead tr td {
+            background-color: #f2f2f2;
+            text-decoration: steelblue;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        tbody td {
+            text-align: center;
+            padding: 1em;
+            /*BORDER*/
+            border: 2px solid black;
             border-collapse: collapse;
+        }
+     
+
+        tbody tr th:first-child {
+            background-color: #f2f2f2;
+            text-decoration: steelblue;
+            padding: 1em;
+        }
+
+        tbody tr th{
+            height: 100px;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead  >
-           <th>Rozvrh třídy S2A</th>
+        <thead>
+            <tr>
+                <th class = "header__table" colspan = 11> Rozvrh hodin třídy S2A</th>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td>0.</td>
+                <td>1.</td>
+                <td>2.</td>
+                <td>3.</td>
+                <td>4.</td>
+                <td>5.</td>
+                <td>6.</td>
+                <td>7.</td>
+                <td>8.</td>
+                <td>9.</td>
+            </tr>
+            <tr>
+                <td>7:10 - 7:55</td>
+                <td>8:00 - 8:45</td>
+                <td>8:55 - 9:40</td>
+                <td>10:00 - 10:45</td>
+                <td>10:55 - 11:40</td>
+                <td>11:50 - 12:35</td>
+                <td>12:45 - 13:30</td>
+                <td>13:40 - 14:25</td>
+                <td>14:35 - 15:20</td>
+                <td>15:25 - 16:10</td>
+            </tr>
         </thead>
         <tbody>
-            <tr colspan="4">
-                <th>Pondělí</th>
-                <td>Český jazyk</td>
-                <td>Matematika</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
+            <tr>
+                <th rowspan="2" >Pondělí</th>
+                <td>ANJ</td>
+                <td rowspan="2" >CAS</td>
+                <td rowspan="2" >MEC</td>
+                <td rowspan="2" >CJL</td>
+                <td rowspan="2" >STT</td>
+                <td rowspan="2" >TED</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
             </tr>
-            <tr colspan="4">
-                <th>Úterý</th>
-                <td>Český jazyk</td>
-                <td>Matematika</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
+            <tr>
+                <td>ANJ</td>
             </tr>
-            <tr colspan="4">
-                <th>Středa</th>
-                <td>Český jazyk</td>
-                <td>Matematika</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
+
+
+
+            <tr >
+                <th rowspan="2" >Úterý</th>
+                <td rowspan="2" >TEV</td>
+                <td rowspan="2" >TEV</td>
+                <td rowspan="2" >MAT</td>
+                <td >ANJ</td>
+                <td rowspan="2" >CAS</td>
+                <td rowspan="2" >ZSV</td>
+                <td rowspan="2"></td>
+                <td >CAD</td>
+                <td >CAD</td>
+                <td rowspan="2"></td>
             </tr>
-            <tr colspan="4">
-                <th>Čtvrtek</th>
-                <td>Český jazyk</td>
-                <td>Matematika</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
+            <tr>
+                <td >ANJ</td>
+                <td >CAS</td>
+                <td >CAS</td>
             </tr>
-            <tr colspan="4">
-                <th>Pátek</th>
-                <td>Český jazyk</td>
-                <td>Matematika</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
-                <td>Anglický jazyk</td>
+
+
+            <tr>
+                <th  rowspan="4">Středa</th>
+                <td>L:PRA</td>
+                <td>L:PRA</td>
+                <td>L:PRA</td>
+                <td rowspan="4">ELE</td>
+                <td rowspan="4"></td>
+                <td rowspan="4">MEC</td>
+                <td rowspan="4">STT</td>
+                <td rowspan="4">ED</td>
+                <td rowspan="2">CAD</td>
+                <td rowspan="2">CAD</td>
+                
+            </tr>
+            <tr>
+                <td>PRA</td>
+                <td>PRA</td>
+                <td>PRA</td>
+            </tr>
+            <tr>
+                <td>PRA</td>
+                <td>PRA</td>
+                <td>PRA</td>
+                <td rowspan="2">CAS</td>
+                <td rowspan="2">CAS</td>
+            </tr>
+            <tr>
+                <td>S:PRA</td>
+                <td>S:PRA</td>
+                <td>S:PRA</td>
+            </tr>
+
+            <tr >
+                <th rowspan="2">Čtvrtek</th>
+                <td rowspan="2">CJL</td>
+                <td>ANJ</td>
+                <td rowspan="2">MAT</td>
+                <td rowspan="2">FYZ</td>
+                <td rowspan="2">ZSV</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>ANJ</td>
+            </tr>
+
+
+
+
+            <tr>
+                <th rowspan="2">Pátek</th>
+                <td rowspan="2">MAT</td>
+                <td rowspan="2">ELE</td>
+                <td rowspan="2">STT</td>
+                <td rowspan="2">MEC</td>
+                <td rowspan="2">FYZ</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
             </tr>
         </tbody>
     </table>
