@@ -8,7 +8,7 @@
     <style>
 /*TABLE*/
         table {
-            background-color: gray;
+            background-color: rgb(235, 223, 223);
             border: 2px solid black;
             border-collapse: collapse;
         }
@@ -16,15 +16,17 @@
 
 /*HEADER*/
         .header__table {
-            font-size: 24px;
+            font-size: 28px;
+            text-transform: uppercase;
             border-bottom: 2px solid black;
             padding: 0.5em;
         }
 
         thead tr{
-            border: 2px solid rgba(0, 0, 0, 0.712);
+            color: white;
             text-align: center;
-            padding: 0.5em;
+            background-color: rgb(104, 99, 99);
+            padding: 20px;
         }
 
 
@@ -35,7 +37,8 @@
 
         tbody tr th:first-child {
             border: 2px solid black;
-            background-color: black;
+            font-size: large;
+            background-color: rgb(104, 99, 99);
             padding: 1em;
         }
         
@@ -43,144 +46,151 @@
             text-align: center;
             padding: 1em;
             /*BORDER*/
-            border: 2px solid rgba(0, 0, 0, 0.712);
+           border: 1px solid rgba(0, 0, 0, 0.712);
             border-collapse: collapse;
         }
 
+
+/*STYLE*/
+        .subject {
+            background-color: white;
+            color: black;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .day {
+           color: white;
+           text-transform: uppercase;
+        }
+
+        .time {
+            box-sizing: content-box;
+            border-left: 2px solid black;
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th class = "header__table" colspan = 11> Rozvrh hodin třídy S2A</th>
+
+                <th class="header__table" colspan = 11> Rozvrh hodin třídy S2A</th>
             </tr>
-            <tr>
-                <td rowspan="2"></td>
-                <td>0.</td>
-                <td>1.</td>
-                <td>2.</td>
-                <td>3.</td>
-                <td>4.</td>
-                <td>5.</td>
-                <td>6.</td>
-                <td>7.</td>
-                <td>8.</td>
-                <td>9.</td>
-            </tr>
-            <tr>
-                <td>7:10 - 7:55</td>
-                <td>8:00 - 8:45</td>
-                <td>8:55 - 9:40</td>
-                <td>10:00 - 10:45</td>
-                <td>10:55 - 11:40</td>
-                <td>11:50 - 12:35</td>
-                <td>12:45 - 13:30</td>
-                <td>13:40 - 14:25</td>
-                <td>14:35 - 15:20</td>
-                <td>15:25 - 16:10</td>
+            <tr class="time">
+                <td rowspan="2" class="time"></td>
+                <td class="time">0. 7:10 - 7:55</td>
+                <td class="time">1. 8:00 - 8:45</td>
+                <td class="time">2. 8:55 - 9:40</td>
+                <td class="time">3. 10:00 - 10:45</td>
+                <td class="time">4. 10:55 - 11:40</td>
+                <td class="time">5. 11:50 - 12:35</td>
+                <td class="time">6. 12:45 - 13:30</td>
+                <td class="time">7. 13:40 - 14:25</td>
+                <td class="time">8. 14:35 - 15:20</td>
+                <td class="time">9. 15:25 - 16:10</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="2" >Pondělí</th>
-                <td>ANJ</td>
-                <td rowspan="2" >CAS</td>
-                <td rowspan="2" >MEC</td>
-                <td rowspan="2" >CJL</td>
-                <td rowspan="2" >STT</td>
-                <td rowspan="2" >TED</td>
+                <th rowspan="2" class="day">Pondělí</th>
                 <td rowspan="2"></td>
+                <td class="subject">ANJ</td>
+                <td rowspan="2" class="subject">CAS</td>
+                <td rowspan="2" class="subject">MEC</td>
+                <td rowspan="2" class="subject">CJL</td>
+                <td rowspan="2" class="subject">STT</td>
+                <td rowspan="2" class="subject">TED</td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
             </tr>
             <tr>
-                <td>ANJ</td>
+                <td class="subject">ANJ</td>
             </tr>
 
 
 
             <tr >
-                <th rowspan="2" >Úterý</th>
-                <td rowspan="2" >TEV</td>
-                <td rowspan="2" >TEV</td>
-                <td rowspan="2" >MAT</td>
-                <td >ANJ</td>
-                <td rowspan="2" >CAS</td>
-                <td rowspan="2" >ZSV</td>
+                <th rowspan="2" class="day">Úterý</th>
                 <td rowspan="2"></td>
-                <td >CAD</td>
-                <td >CAD</td>
+                <td rowspan="2" class="subject">TEV</td>
+                <td rowspan="2" class="subject">TEV</td>
+                <td rowspan="2" class="subject">MAT</td>
+                <td class="subject">ANJ</td>
+                <td rowspan="2" class="subject">CAS</td>
+                <td rowspan="2" class="subject">ZSV</td>
                 <td rowspan="2"></td>
+                <td class="subject">CAD</td>
+                <td class="subject">CAD</td>
             </tr>
             <tr>
-                <td >ANJ</td>
-                <td >CAS</td>
-                <td >CAS</td>
+                <td class="subject">ANJ</td>
+                <td class="subject">CAS</td>
+                <td class="subject">CAS</td>
             </tr>
 
 
             <tr>
-                <th  rowspan="4">Středa</th>
-                <td>L:PRA</td>
-                <td>L:PRA</td>
-                <td>L:PRA</td>
-                <td rowspan="4">ELE</td>
+                <th  rowspan="4" class="day">Středa</th>
+                <td class="subject">L:PRA</td>
+                <td class="subject">L:PRA</td>
+                <td class="subject">L:PRA</td>
+                <td rowspan="4" class="subject">ELE</td>
                 <td rowspan="4"></td>
-                <td rowspan="4">MEC</td>
-                <td rowspan="4">STT</td>
-                <td rowspan="4">ED</td>
-                <td rowspan="2">CAD</td>
-                <td rowspan="2">CAD</td>
+                <td rowspan="4" class="subject">MEC</td>
+                <td rowspan="4" class="subject">STT</td>
+                <td rowspan="4" class="subject">ED</td>
+                <td rowspan="2" class="subject">CAD</td>
+                <td rowspan="2" class="subject">CAD</td>
                 
             </tr>
             <tr>
-                <td>PRA</td>
-                <td>PRA</td>
-                <td>PRA</td>
+                <td class="subject">PRA</td>
+                <td class="subject">PRA</td>
+                <td class="subject">PRA</td>
             </tr>
             <tr>
-                <td>PRA</td>
-                <td>PRA</td>
-                <td>PRA</td>
-                <td rowspan="2">CAS</td>
-                <td rowspan="2">CAS</td>
+                <td class="subject">PRA</td>
+                <td class="subject">PRA</td>
+                <td class="subject">PRA</td>
+                <td rowspan="2" class="subject">CAS</td>
+                <td rowspan="2" class="subject">CAS</td>
             </tr>
             <tr>
-                <td>S:PRA</td>
-                <td>S:PRA</td>
-                <td>S:PRA</td>
+                <td class="subject">S:PRA</td>
+                <td class="subject">S:PRA</td>
+                <td class="subject">S:PRA</td>
             </tr>
 
             <tr >
-                <th rowspan="2">Čtvrtek</th>
-                <td rowspan="2">CJL</td>
-                <td>ANJ</td>
-                <td rowspan="2">MAT</td>
-                <td rowspan="2">FYZ</td>
-                <td rowspan="2">ZSV</td>
+                <th rowspan="2" class="day">Čtvrtek</th>
                 <td rowspan="2"></td>
+                <td rowspan="2" class="subject">CJL</td>
+                <td class="subject">ANJ</td>
+                <td rowspan="2" class="subject">MAT</td>
+                <td rowspan="2" class="subject">FYZ</td>
+                <td rowspan="2" class="subject">ZSV</td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
             </tr>
             <tr>
-                <td>ANJ</td>
+                <td class="subject">ANJ</td>
             </tr>
 
 
 
 
             <tr>
-                <th rowspan="2">Pátek</th>
-                <td rowspan="2">MAT</td>
-                <td rowspan="2">ELE</td>
-                <td rowspan="2">STT</td>
-                <td rowspan="2">MEC</td>
-                <td rowspan="2">FYZ</td>
+                <th rowspan="2" class="day">Pátek</th>
                 <td rowspan="2"></td>
+                <td rowspan="2" class="subject">MAT</td>
+                <td rowspan="2" class="subject">ELE</td>
+                <td rowspan="2" class="subject">STT</td>
+                <td rowspan="2" class="subject">MEC</td>
+                <td rowspan="2" class="subject">FYZ</td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
                 <td rowspan="2"></td>
